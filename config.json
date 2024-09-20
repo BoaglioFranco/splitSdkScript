@@ -1,0 +1,28 @@
+{
+  "apiKey": "_",
+  "isStaging": true,
+  "flags": [
+    {
+      "name": "flag_with_traffic",
+      "impressions": 20,
+      "events": [
+        {
+          "eventType": "page.load.time",
+          "trafficType": "user",
+          "treatments": {
+            "on": { "value": 900 },
+            "off": { "value": 200 }
+          }
+        },
+        {
+          "eventType": "task_creation",
+          "trafficType": "user",
+          "treatments": {
+            "on": { "count": 4, "properties": { "i_am": "a property" } },
+            "off": { "count": 1 }
+          }
+        }
+      ]
+    }
+  ]
+}
